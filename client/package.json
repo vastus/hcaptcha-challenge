@@ -1,0 +1,24 @@
+{
+  "name": "hcaptcha-example",
+  "version": "1.0.0",
+  "description": "Example usage of hCaptcha",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html",
+    "now-build": "NODE_ENV=production parcel build index.html",
+    "now-start": "serve -s dist/"
+  },
+  "dependencies": {
+    "auth0-js": "^9.8.0",
+    "folktale": "^2.3.1",
+    "react": "^16.5.2",
+    "react-dom": "16.5.2",
+    "react-hcaptcha": "0.1.1",
+    "react-router-dom": "^4.3.1",
+    "serve": "^10.0.2"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.6.1"
+  }
+}

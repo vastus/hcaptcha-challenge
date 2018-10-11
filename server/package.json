@@ -1,0 +1,25 @@
+{
+  "name": "hcaptcha-challenge-server",
+  "version": "0.0.1",
+  "description": "hCaptcha challenge - server",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Juho Hautala <juho.hautala@iki.fi>",
+  "license": "MIT",
+  "engines": {
+    "node": "10.11.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "express-hcaptcha": "0.0.2",
+    "express-jwt": "^5.3.1",
+    "jwks-rsa": "^1.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4"
+  }
+}
