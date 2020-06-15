@@ -1,6 +1,6 @@
 # hCaptcha challenge
 
-The app can be accessed at https://hcaptcha-example-cdxojmthcc.now.sh
+TODO(vastus): Deploy the app and add the URL.
 
 ## Server
 
