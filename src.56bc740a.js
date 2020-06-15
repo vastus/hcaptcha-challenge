@@ -190,4 +190,4 @@ var e=require("isarray");module.exports=d,module.exports.parse=t,module.exports.
 },{}],"H99C":[function(require,module,exports) {
 "use strict";var e=u(require("react")),r=u(require("react-dom")),t=u(require("./components/App"));function u(e){return e&&e.__esModule?e:{default:e}}require("./styles.css"),r.default.render(e.default.createElement(t.default,null),document.getElementById("app"));
 },{"react":"HdMw","react-dom":"X9zx","./components/App":"IC1e","./styles.css":"D9Nj"}]},{},["H99C"], null)
-//# sourceMappingURL=/src.56bc740a.js.map
+//# sourceMappingURL=hcaptcha-challenge/src.56bc740a.js.map
