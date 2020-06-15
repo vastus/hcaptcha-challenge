@@ -5,9 +5,7 @@
   "main": "index.html",
   "scripts": {
     "start": "parcel index.html --open",
-    "build": "parcel build index.html",
-    "now-build": "NODE_ENV=production parcel build index.html",
-    "now-start": "serve -s dist/"
+    "build": "NODE_ENV=production parcel build index.html"
   },
   "dependencies": {
     "@hcaptcha/react-hcaptcha": "^0.1.9",
