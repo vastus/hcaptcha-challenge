@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "start": "parcel index.html --open",
-    "build": "NODE_ENV=production parcel build --public-url hcaptcha-challenge index.html"
+    "build": "NODE_ENV=production parcel build --public-url /hcaptcha-challenge index.html"
   },
   "dependencies": {
     "@hcaptcha/react-hcaptcha": "^0.1.9",
