@@ -18,16 +18,14 @@ class Login extends React.Component {
       return <Redirect to="/" />;
     }
 
-    if (this.state.loading) {
-      return <Spinner />;
-    }
-
     return (
-      <div>
-        <h2>Login</h2>
+      <>
+        <Spinner style={{display: this.state.loading ? 'block' : 'none'}} />
 
-        {this.state.verified ? (
-          <div>
+        <div style={{display: this.state.loading ? 'none' : 'block'}}>
+          <h2>Login</h2>
+
+          <div style={{display: this.state.verified ? 'block' : 'none'}}>
             <h3>Verified!</h3>
             <p>Go ahead and login now using one of the OAuth providers below.</p>
 
@@ -41,8 +39,8 @@ class Login extends React.Component {
               </button>
             </div>
           </div>
-        ) : (
-          <div>
+
+          <div style={{display: this.state.verified ? 'none' : 'block'}}>
             <p>To be able to log in you need to prove that you're a human before proceeding.</p>
 
             <h3>Prove you're human</h3>
@@ -52,8 +50,8 @@ class Login extends React.Component {
               onVerify={this.verify}
             />
           </div>
-        )}
-      </div>
+        </div>
+      </>
     );
   }
 
