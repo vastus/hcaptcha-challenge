@@ -5,8 +5,11 @@ const hcaptcha = require('express-hcaptcha');
 const jwt = require('express-jwt');
 const jwksRSA = require('jwks-rsa');
 
+const {get} = require('./utils');
+
 const PORT = process.env.PORT || 8080;
-const SECRET = process.env.HCAPTCHA_SECRET_KEY;
+const AUDIENCE = get(process.env, 'AUTH0_CLIENT_ID');
+const SECRET = get(process.env, 'HCAPTCHA_SECRET_KEY');
 
 const app = express();
 
@@ -25,7 +28,7 @@ const checkJWT = jwt({
   }),
 
   // validate the audience and the issuer
-  audience: process.env.AUTH0_CLIENT_ID,
+  audience: AUDIENCE,
   issuer: `https://vastus.eu.auth0.com/`,
   algorithms: ['RS256']
 });
