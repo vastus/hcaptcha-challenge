@@ -4,6 +4,7 @@
   "description": "hCaptcha challenge - server",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon index.js",
     "start": "node index.js"
   },
   "author": "Juho Hautala <juho.hautala@iki.fi>",
